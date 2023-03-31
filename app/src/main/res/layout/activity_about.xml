@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/text_view_developer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Developers"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_1st_dev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_developer"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_view_1st_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/a" />
+
+            <TextView
+                android:id="@+id/text_view_1st_parson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/image_view_1st_img"
+                android:text="Abir Saha"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_1st_parson"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/image_view_1st_img"
+                android:text="abirsaha4333@gmail.com" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_2nd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_view_1st_dev"
+        android:layout_marginTop="30dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_view_2st_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/g" />
+
+            <TextView
+                android:id="@+id/text_view_2st_parson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/image_view_2st_img"
+                android:text="Grishma Shah"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_2st_parson"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/image_view_2st_img"
+                android:text="abirsaha4333@gmail.com" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+
+        android:id="@+id/button_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_view_2nd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:text="back" />
+
+</RelativeLayout>
